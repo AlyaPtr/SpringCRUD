@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit</title>
+</head>
+<body>
+    <form action="#" method="POST">
+        <input type="hidden" th:text="${user.getId()}"></br>
+        <input type="text" th:text= "${user.getName()}" placeholder="Name" name="name"></br>
+        <input type="text" th:text="${user.getLastname()}" placeholder="Lastname" name="lastname"></br>
+        <button type="submit">Update user</button>
+    </form>
+    <a th:href = "@{/}"> Back to User List</a>
+</body>
+</html>
